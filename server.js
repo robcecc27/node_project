@@ -9,7 +9,7 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('Hello World');
+  res.send('A simple Dockerized Node.js app launched via Terraform');
 });
 
 app.listen(PORT, HOST);
