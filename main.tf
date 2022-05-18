@@ -24,9 +24,8 @@ resource "docker_container" "docker_web_app" {
   restart = "always"
   volumes {
     container_path = "/myapp"
-    # replace the host_path with full path for your project directory starting from root directory /
-    host_path = "/home/robcecc/Docker/node_project"
-    read_only = false
+    host_path      = "/home/robcecc/Docker/node_project"
+    read_only      = false
   }
   ports {
     internal = 8080
